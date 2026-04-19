@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #f6f4ff, #e8f0ff);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #2f2a5c, #4d3a7a);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+}
+
+.nav-links a {
+  color: #efe9ff;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+.active-link {
+  border-bottom: 2px solid #efe9ff;
+  padding-bottom: 4px;
+}
+
+.page-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.hero-card,
+.content-card,
+.project-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(57, 45, 105, 0.09);
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #d9d0ff;
+  object-fit: cover;
+}
+
+h1, h2 {
+  color: #2f2a5c;
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: #5b5682;
+  font-size: 17px;
+}
+
+.content-card p,
+.project-card p,
+.project-note {
+  margin-top: 12px;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.details-list {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.skills-box span {
+  background-color: #ece8ff;
+  color: #2f2a5c;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.page-title {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links a {
+    margin: 0 10px;
+  }
+}
